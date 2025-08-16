@@ -43,7 +43,7 @@ class LogisticRegression:
         return np.array([1 if i > 0.5 else 0 for i in yPred])
 
 if __name__ == "__main__":
-    df = load_stock_data("C:/Users/Mabo Giqwa/Documents/Stock Prediction model/Stock.Predictor-AI/data/csv_with_features/A.csv")
+    df = load_stock_data("C:/Users/Mabo Giqwa/Documents/Stock Prediction model/Stock.Predictor-AI/data/csv_with_features/ABNB.csv")
 
     features = ["Close", "High", "Low", "Open", "Volume", "Daily Return(%)", "Monthly Volatility", "Monthly Momentum"]
     X = df[features].values
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     model = LogisticRegression(learningRate=0.001, numOfIterations=9999)
     model.fit(X_train, y_train)
 
-    with open("logistic_A_model.pkl", "wb") as f:
+    with open("logistic_ABNB_model.pkl", "wb") as f:
         pickle.dump(model, f)
 
     # Predict
