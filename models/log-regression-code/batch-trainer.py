@@ -81,8 +81,8 @@ if __name__ == "__main__":
                "VZ","WAB","WAT","WBA","WBD","WDAY","WDC","WDC","WEC","WELL","WFC","WM","WMB","WMT","WRB","WSM","WST","WTW",
                "WY","WYNN","XEL","XOM","XYL","YUM","ZBH","ZBRA","ZTS"]
     
-    data_folder = "C:/Users/Mabo Giqwa/Documents/Stock Prediction model/Stock.Predictor-AI/data/csv_with_features/"
-    model_folder = "C:/Users/Mabo Giqwa/Documents/Stock Prediction model/Stock.Predictor-AI/models/"
+    data_folder = "add-own-directory-to-.csv-files"
+    model_folder = "add-own-directory-to-save-model-files"
 
     os.makedirs(model_folder, exist_ok=True)
 
